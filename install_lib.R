@@ -1,0 +1,11 @@
+install.packages("lubridate", dependencies=TRUE)
+install.packages("RMySQL", dependencies=TRUE)
+install.packages("jsonlite", dependencies=TRUE)
+install.packages("curl", dependencies=TRUE)
+install.packages("openssl", dependencies=TRUE)
+install.packages("httr", dependencies=TRUE)
+install.packages("fields",dependencies=TRUE)
+install.packages("maps",dependencies=TRUE)
+install.packages("raster",dependencies=TRUE)
+install.packages("rgdal",dependencies=TRUE)
+
