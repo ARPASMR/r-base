@@ -12,4 +12,5 @@ RUN apt-get install -y ssh
 RUN apt-get install -y libgdal-dev
 COPY ./install_lib.R /usr/local/src/myscripts/
 WORKDIR /usr/local/src/myscripts/
+R CMD INSTALL RPostgreSQL
 RUN Rscript install_lib.R
