@@ -12,5 +12,5 @@ RUN apt-get install -y ssh
 RUN apt-get install -y libgdal-dev
 COPY ./install_lib.R /usr/local/src/myscripts/
 WORKDIR /usr/local/src/myscripts/
-RUN R CMD INSTALL https://cran.r-project.org/package=RPostgreSQL
+RUN R -e "install.packages('RPostgreSQL', repos = 'http://cran.us.r-project.org')"
 RUN Rscript install_lib.R
